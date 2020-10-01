@@ -1,0 +1,11 @@
+
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^leelaskyvillas.myhousingadvisor\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.leelaskyvillas.myhousingadvisor.com/$1 [R,L]
+
+
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^www.leelaskyvillas.myhousingadvisor\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.leelaskyvillas.myhousingadvisor.com/$1 [R,L]
